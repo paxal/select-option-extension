@@ -1,0 +1,39 @@
+{
+  "name": "Select option extension",
+  "version": "1.0.0",
+  "description": "Deals with <select> options : filter, copy and paste",
+  "manifest_version": 2,
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "js": ["js/load.js"]
+    }
+  ],
+  "commands": {
+    "filter": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Filter values inside select"
+    },
+    "copy":{
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Copy selected value"
+    },
+    "paste":{
+      "suggested_key": {
+        "default": "Alt+Shift+V"
+      },
+      "description": "Paste selected value"
+    }
+  }
+}
