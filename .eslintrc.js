@@ -16,6 +16,7 @@ module.exports = {
     'ecmaVersion': 2018,
   },
   'rules': {
+    'no-alert': ['error'],
     'indent': ['error', 2],
     'comma-dangle': [
       'error',
