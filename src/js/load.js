@@ -34,6 +34,7 @@
       return;
     }
 
+    // eslint-disable-next-line no-alert
     let text = prompt('Filter values (re) :');
     if (text === null) {
       text = '';
