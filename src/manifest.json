@@ -3,19 +3,11 @@
   "version": "1.0.0",
   "description": "Deals with <select> options : filter, copy and paste",
   "manifest_version": 2,
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus", "activeTab"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "content_scripts": [
-    {
-      "matches": ["https://*/*", "http://*/*"],
-      "run_at": "document_start",
-      "all_frames": true,
-      "js": ["js/load.js"]
-    }
-  ],
   "commands": {
     "filter": {
       "suggested_key": {
