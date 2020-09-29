@@ -27,5 +27,8 @@
       },
       "description": "Paste selected value"
     }
+  },
+  "icons": {
+    "128": "assets/logo128.png"
   }
 }
