@@ -4,10 +4,10 @@
     clipboard: null,
 
     /**
-     * @param {HTMLElement|null} el
+     * @param {Element|null} el
      * @return {null|HTMLSelectElement}
      */
-    getSelect(el) {
+    getSelect(el = null) {
       const activeElement = el || document.activeElement;
       if (activeElement instanceof HTMLSelectElement) {
         return activeElement;
@@ -28,7 +28,7 @@
     },
 
     /**
-     * @param {HTMLSelectElement} e
+     * @param {HTMLOptionElement} e
      * @param {boolean} visible
      */
     show(e, visible) {

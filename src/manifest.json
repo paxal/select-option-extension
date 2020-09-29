@@ -30,5 +30,6 @@
   },
   "icons": {
     "128": "assets/logo128.png"
-  }
+  },
+  "minimum_chrome_version": "63"
 }
