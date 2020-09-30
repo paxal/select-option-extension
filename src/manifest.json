@@ -1,6 +1,6 @@
 {
   "name": "Select option extension",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Deals with <select> options : filter, copy and paste",
   "manifest_version": 2,
   "permissions": ["contextMenus", "activeTab"],
