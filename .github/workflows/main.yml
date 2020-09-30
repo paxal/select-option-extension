@@ -26,5 +26,5 @@ jobs:
       # Install your dependencies
       - run: npm ci
 
-      # Run ESLint
-      - run: make eslint
+      # Run ESLint and TSC
+      - run: make eslint static
